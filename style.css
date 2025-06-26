@@ -226,6 +226,14 @@ footer {
     text-align: center;
   }
 
+  .info-image {
+    margin-bottom: 1rem; /* Reduce spacing */
+  }
+
+  .info-text {
+    padding: 0.5rem; /* Less padding */
+  }
+
   .info-text h2 {
     font-size: 1.5rem;
   }
