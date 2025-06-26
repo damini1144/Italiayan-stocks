@@ -210,7 +210,6 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .banner-content h1 {
     font-size: 2rem;
@@ -220,35 +219,47 @@ footer {
     font-size: 1rem;
   }
 
-    .info-container,
+  .info-section {
+    padding: 2.5rem 1rem;
+  }
+
+  .info-container,
   .info-container.reverse {
     flex-direction: column;
     text-align: center;
-    gap: 1rem; /* reduced gap */
-    padding: 1.5rem 1rem;
-  }
-
-  .info-text {
-    padding: 0.5rem 0;
+    gap: 1.2rem;
+    padding: 0; /* Already has section padding above */
+    margin-bottom: 2rem; /* Add space between sections */
   }
 
   .info-image {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .info-text {
+    padding: 0.5rem 1rem;
   }
 
   .info-text h2 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-bottom: 0.5rem;
   }
 
   .info-text p {
     font-size: 1rem;
-    line-height: 1.4;
+    line-height: 1.5;
   }
-
 
   .testimonial-grid {
     grid-template-columns: 1fr;
+  }
+
+  .testimonial {
+    margin-bottom: 1.5rem;
+  }
+
+  .cta {
+    padding: 3rem 1.5rem;
   }
 }
 
