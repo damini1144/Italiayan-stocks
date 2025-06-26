@@ -220,7 +220,7 @@ footer {
   }
 
   .info-section {
-    padding: 2.5rem 1rem;
+    padding: 2rem 1rem;
   }
 
   .info-container,
@@ -261,6 +261,13 @@ footer {
   .cta {
     padding: 3rem 1.5rem;
   }
+}
+
+.info-image img {
+  max-height: 200px;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 10px;
 }
 
 /* WhatsApp Buttons */
