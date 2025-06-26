@@ -210,6 +210,7 @@ footer {
   font-size: 0.9rem;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   .banner-content h1 {
     font-size: 2rem;
@@ -269,6 +270,7 @@ footer {
     padding: 3rem 1.5rem;
   }
 }
+
 
 /* WhatsApp Buttons */
 .whatsapp-desktop {
@@ -354,3 +356,5 @@ footer {
     display: none;
   }
 }
+
+
