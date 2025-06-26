@@ -227,27 +227,34 @@ footer {
   .info-container.reverse {
     flex-direction: column;
     text-align: center;
-    gap: 1.2rem;
-    padding: 0; /* Already has section padding above */
-    margin-bottom: 2rem; /* Add space between sections */
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 0;
   }
 
   .info-image {
-    margin-bottom: 1rem;
-  }
-
-  .info-text {
-    padding: 0.5rem 1rem;
-  }
-
-  .info-text h2 {
-    font-size: 1.5rem;
     margin-bottom: 0.5rem;
   }
 
+  .info-image img {
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+
+  .info-text {
+    padding: 0 1rem;
+  }
+
+  .info-text h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+  }
+
   .info-text p {
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 0.95rem;
+    line-height: 1.4;
   }
 
   .testimonial-grid {
@@ -261,13 +268,6 @@ footer {
   .cta {
     padding: 3rem 1.5rem;
   }
-}
-
-.info-image img {
-  max-height: 200px;
-  object-fit: cover;
-  margin: 0 auto;
-  border-radius: 10px;
 }
 
 /* WhatsApp Buttons */
