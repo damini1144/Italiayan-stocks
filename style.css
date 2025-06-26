@@ -20,6 +20,7 @@ body {
 img {
   max-width: 100%;
   display: block;
+  height: auto;
 }
 
 /* Banner Section */
@@ -32,12 +33,14 @@ img {
 .banner-overlay {
   background: rgba(0, 0, 0, 0.6);
   width: 100%;
-  height: 80%;
-  padding: 15rem 20em;
+  height: 100%;
+  padding: 5rem 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 1;
 }
 
@@ -47,6 +50,7 @@ img {
   padding: 2rem;
   max-width: 700px;
   z-index: 2;
+  position: relative;
 }
 
 .banner-content h1 {
@@ -123,7 +127,7 @@ img {
 .section-beige { background-color: #fdf1dc; }
 .section-green { background-color: #d4f4dd; }
 .section-pink { background-color: #f5d0f5; }
-.section-yellow { background-color: #fdf6e3;}
+.section-yellow { background-color: #fdf6e3; }
 
 /* Testimonials */
 .testimonials {
@@ -235,7 +239,7 @@ footer {
   }
 }
 
-/* 🌐 Desktop WhatsApp Button */
+/* WhatsApp Buttons */
 .whatsapp-desktop {
   position: fixed;
   bottom: 20px;
@@ -259,12 +263,12 @@ footer {
   width: 60px;
   height: 60px;
   z-index: 999;
-  background-color: rgba(37, 211, 102, 0.4); /* more transparent */
+  background-color: rgba(37, 211, 102, 0.4);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 8px rgba(37, 211, 102, 0.3), 0 0 16px rgba(37, 211, 102, 0.);
+  box-shadow: 0 0 8px rgba(37, 211, 102, 0.3), 0 0 16px rgba(37, 211, 102, 0);
   animation: blinkGlow 1s infinite;
   backdrop-filter: blur(2px);
 }
@@ -308,19 +312,14 @@ footer {
   }
 }
 
-/* 🔒 Show only ONE button based on screen width */
-
-/* Hide desktop button on mobile */
 @media (max-width: 768px) {
   .whatsapp-desktop {
     display: none;
   }
 }
 
-/* Hide mobile button on desktop */
 @media (min-width: 769px) {
   .whatsapp-float {
     display: none;
   }
 }
-
