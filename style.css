@@ -220,27 +220,32 @@ footer {
     font-size: 1rem;
   }
 
-  .info-container,
+    .info-container,
   .info-container.reverse {
     flex-direction: column;
     text-align: center;
-  }
-
-  .info-image {
-    margin-bottom: 1rem; /* Reduce spacing */
+    gap: 1rem; /* reduced gap */
+    padding: 1.5rem 1rem;
   }
 
   .info-text {
-    padding: 0.5rem; /* Less padding */
+    padding: 0.5rem 0;
+  }
+
+  .info-image {
+    margin-bottom: 0.5rem;
   }
 
   .info-text h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
   }
 
   .info-text p {
     font-size: 1rem;
+    line-height: 1.4;
   }
+
 
   .testimonial-grid {
     grid-template-columns: 1fr;
