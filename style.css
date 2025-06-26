@@ -201,13 +201,32 @@ img {
   background-color: #1e8449;
 }
 
-/* Footer */
+/* Footer container */
 footer {
   background-color: #111;
   color: #ccc;
   text-align: center;
   padding: 1.5rem;
   font-size: 0.9rem;
+}
+
+/* Footer links */
+footer a {
+  color: #ccc;                   /* Light gray link color */
+  text-decoration: underline;   /* Show underline */
+  margin: 0 8px;                 /* Spacing between links */
+  transition: color 0.3s ease;  /* Smooth color change on hover */
+}
+
+/* Footer links on hover */
+footer a:hover {
+  color: #fff;                   /* Bright white on hover */
+  text-decoration: none;        /* Optional: remove underline */
+}
+
+/* Optional: Email link styling */
+footer a[href^="mailto:"] {
+  font-weight: bold;            /* Make email stand out */
 }
 
 /* Responsive */
@@ -302,7 +321,7 @@ footer {
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 8px rgba(37, 211, 102, 0.3), 0 0 16px rgba(37, 211, 102, 0);
-  animation: blinkGlow 1s infinite;
+  animation: blinkGlow 0.5s infinite;
   backdrop-filter: blur(2px);
 }
 
